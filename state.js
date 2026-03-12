@@ -1,4 +1,4 @@
-export const state = {
+const state = {
     user: null, // { name: 'Alice', phone: '1234567890', email: 'alice@example.com' }
     wallet: 1500,
     points: 120,
@@ -103,3 +103,4 @@ export const state = {
         this.listeners.forEach(fn => fn());
     }
 };
+window.state = state;
